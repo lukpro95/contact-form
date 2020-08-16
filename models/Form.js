@@ -76,6 +76,8 @@ Form.prototype.sendMail = function() {
                 Your submission: 
                 Problem: ${this.data.category}
                 Details: ${this.data.details}
+
+                Your phone contact: ${this.data.phone}
     
                 Kind regards,
                 TechService
@@ -89,6 +91,10 @@ Form.prototype.sendMail = function() {
                 Your submission:<br />
                 Problem: ${this.data.category}<br />
                 Details: ${this.data.details}
+
+                <br /></br>
+                Your phone contact: ${this.data.phone}
+
                 <br /><br />
                 Kind regards, <br />
                 TechService
