@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const router = require('./router')
 const dotenv = require('dotenv')
+const cors = require('cors')
+
+app.use(cors())
 
 app.use(express.urlencoded({extended: false})) // accepting html form submit
 app.use('/', router)
